@@ -1,0 +1,5 @@
+#!include:.gitignore
+
+# Allow hand-written type declaration files (not compiled artifacts)
+!server/src/types/
+!server/src/types/**
