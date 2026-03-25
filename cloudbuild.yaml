@@ -7,13 +7,13 @@ steps:
       - '--platform'
       - 'linux/amd64'
       - '-t'
-      - 'us-central1-docker.pkg.dev/$PROJECT_ID/kytte/paperclip:latest'
+      - 'us-central1-docker.pkg.dev/$PROJECT_ID/kytte-internal/paperclip:latest'
       - '.'
     env:
       - 'DOCKER_BUILDKIT=1'
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/kytte/paperclip:latest']
+    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/kytte-internal/paperclip:latest']
 
 timeout: '1800s'
 options:
